@@ -1,14 +1,15 @@
 {
   "name": "Contact",
   "scripts": {
-    "dev": "",
-    "build": "",
-    "start": ""
+    "dev": "webpack-dev-server",
+    "build": "webpack --mode production",
+    "start": "webpack --watch"
   },
   "author": "2U",
   "license": "UNLICENSED",
   "dependencies": {
-    "idb": "^7.0.2"
+    "idb": "^7.0.2",
+    "workbox-window": "^6.5.4"
   },
   "devDependencies": {
     "@babel/core": "^7.15.0",

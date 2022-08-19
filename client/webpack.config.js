@@ -14,7 +14,7 @@ module.exports = () => {
 
     // TODO: Add the correct output
     output: {
-      filename: 'bundle.js',
+      filename: '[name].bundle.js',
       path: path.resolve(__dirname, "dist")
     },
 
@@ -32,8 +32,9 @@ module.exports = () => {
       start_url: './',
       icons: [
         {
-          src: path.resolve('./assets/images/logo.png'),
-          sizes: [96, 128, 192, 256, 384, 512] // multiple sizes
+          src: path.resolve('./src/images/logo.png'),
+          sizes: [96, 128, 192, 256, 384, 512], // multiple sizes
+          destination: path.join('images', 'icons'),
         }
       ]
      })
